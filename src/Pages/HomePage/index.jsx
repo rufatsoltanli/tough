@@ -1,6 +1,7 @@
 import React from 'react'
 import HomePageHero from '../../components/HomePageComponents/HeroSection'
 import Statistics from '../../components/HomePageComponents/StatisticsSection'
+import ServicesSection from '../../components/HomePageComponents/ServicesSection'
 
 function HomePage() {
   return (
@@ -9,7 +10,10 @@ function HomePage() {
         <HomePageHero />
       </section>
       <section id='statisticsSection'>
-        <Statistics/>
+        <Statistics />
+      </section>
+      <section id='servicesSection'>
+        <ServicesSection />
       </section>
     </div>
   )
