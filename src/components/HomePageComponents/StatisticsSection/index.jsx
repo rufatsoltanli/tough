@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import useScrollTriggeredCountUp from '../../../hooks/useCounterHook';
 import "./style.scss"
+import CommonButton from '../../CommonComponents/Buttons';
 
 function Statistics() {
     const YourComponentProjects = () => {
@@ -30,9 +31,9 @@ function Statistics() {
         return <div ref={refCups} className='increasingNumber'>{countCups}</div>;
     };
     return (
-        <div id="homePageStatistics">
-            <div className="leftSide">
-                <div className="finishedProjects">
+        <div id="homePageStatistics" >
+            <div className="leftSide" >
+                <div className="finishedProjects" >
                     <YourComponentProjects />
                     FINISHED PROJECTS
                 </div>
@@ -50,9 +51,9 @@ function Statistics() {
                 </div>
             </div>
             <div className="rightSide">
-                <div className="exploreFurther">
+                <CommonButton>
                     Explore Further
-                </div>
+                </CommonButton>
             </div>
         </div>
     )

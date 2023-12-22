@@ -2,6 +2,7 @@ import React from 'react'
 import HomePageHero from '../../components/HomePageComponents/HeroSection'
 import Statistics from '../../components/HomePageComponents/StatisticsSection'
 import ServicesSection from '../../components/HomePageComponents/ServicesSection'
+import PortfolioSection from '../../components/HomePageComponents/PortfolioSection'
 
 function HomePage() {
   return (
@@ -14,6 +15,9 @@ function HomePage() {
       </section>
       <section id='servicesSection'>
         <ServicesSection />
+      </section>
+      <section id='portfolioSection'>
+        <PortfolioSection />
       </section>
     </div>
   )

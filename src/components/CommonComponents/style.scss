@@ -1,0 +1,11 @@
+.commonButton {
+    padding: 32px 60px;
+    width: max-content;
+    font-size: 20px;
+    transition: .4s;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0) !important;
+        cursor: pointer;
+    }
+}

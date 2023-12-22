@@ -12,6 +12,7 @@ function HeroSlider() {
                 focus: 'center',
                 height: 800,
                 focus: 'center',
+                arrows: false,
             }}>
 
             <SplideSlide>

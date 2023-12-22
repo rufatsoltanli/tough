@@ -1,0 +1,52 @@
+.portfolio {
+    width: 80%;
+    margin: 0 auto;
+    padding: 7% 0;
+    height: 140vh;
+
+    .leftSide {
+        width: 27%;
+        height: 100%;
+
+        h1 {
+            font-size: 40px;
+            font-weight: 400;
+        }
+
+        .description {
+            padding: 5% 0;
+            font-size: 23px;
+        }
+
+
+        .imagesCont {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .number1 {
+                background-image: url("../../../assets/images/image_3.jpg.webp");
+                height: 392px;
+            }
+
+            .number2 {
+                background-image: url("../../../assets/images/image_2.jpg.webp");
+                background-position: center;
+                height: 185px;
+            }
+
+            .number3 {
+                background-image: url("../../../assets/images/image_3.jpg.webp");
+                height: 165px;
+            }
+        }
+
+        .card {
+            width: 100%;
+            border: 1px solid black;
+
+        }
+
+
+    }
+}

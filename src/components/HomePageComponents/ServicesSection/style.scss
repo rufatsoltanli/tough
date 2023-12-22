@@ -1,8 +1,8 @@
 .services {
     display: grid;
     grid-template-columns: 2fr 3fr;
-    gap: 10px;
-    height: 80vh;
+    // column-gap: 10px;
+    height: 105vh;
 
     .categoriesContainer {
         background-color: #4a5562;
@@ -18,6 +18,7 @@
                 margin-bottom: 40px;
                 position: relative;
                 font-weight: 400;
+                font-size: 30px;
 
                 &::before {
                     content: "";
@@ -31,21 +32,91 @@
 
             .categoriesButton {
                 div {
-                    padding: 15% 15%;
+                    height: 40px;
+                    width: 150px;
                     display: flex;
+                    margin: 20px;
                     gap: 5px;
+                    font-size: 25px;
+                    position: relative;
+                    transition: .4s;
+
+                    &:hover {
+                        cursor: pointer;
+                        font-size: 28px;
+                        color: #798899;
+
+                        i {
+                            font-size: 27px;
+
+                        }
+
+                        * {
+                            color: #798899;
+                        }
+                    }
                 }
             }
         }
     }
 
+    .getStarted {
+        background-image: url("../../../assets/images/bg_1.jpg.webp");
+        background-position: center;
+        width: 80%;
+
+
+        .getStartedContent {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .text {
+            font-weight: 400;
+            font-size: 30px;
+            color: white;
+        }
+
+        // height: 40%;
+        .commonButton {
+            width: max-content;
+            background-color: white;
+            border: 1px solid white;
+            color: #000000;
+            margin-right: 5%;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+
     .information {
+        animation-name: balacalas;
+        animation-duration: 550ms;
+        animation-fill-mode: backwards;
+
+        @keyframes balacalas {
+            0% {
+                opacity: 0;
+                scale: 0.1;
+            }
+
+            100% {
+                opacity: 1;
+                scale: 1;
+            }
+        }
+
         .choosenCategory {
             display: flex;
             flex-direction: column;
             justify-content: center;
             height: 90%;
-            margin: 5% 5% 10% 5%;
+            margin: 5% 5% 10% 15%;
 
             h1 {
                 font-size: 35px;
@@ -60,25 +131,22 @@
             }
 
             .categoryInfo {
-                width: 80%;
+                width: 60%;
                 row-gap: 5px;
                 line-height: 1.5;
-
+                color: #798899;
+                font-size: 24px;
             }
 
-            .button {
-                margin-top: 15px;
-                width: max-content;
-                margin-top: 15px;
+            .commonButton {
                 background-color: #4a5562;
-                padding: 20px 30px;
+                border: 1px solid #4a5562;
+                color: white;
+                margin-top: 10px;
+                padding: 24px 50px;
 
-
-
-                span {
-                    width: max-content;
-
-                    color: white;
+                &:hover {
+                    color: black;
                 }
             }
         }
