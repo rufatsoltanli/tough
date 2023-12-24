@@ -1,0 +1,62 @@
+footer {
+    background: #1b212c;
+
+    .footerCont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5% 0;
+        gap: 50px;
+    }
+
+    .copyright {
+        font-size: 25px;
+        color: white;
+    }
+
+    .contactUs {
+        font-size: 30px;
+        text-align: center;
+        color: white;
+
+        .email {
+            font-size: 24px;
+        }
+
+        * {
+            padding: 5px 0;
+        }
+    }
+
+    .socialMedias {
+        display: flex;
+        gap: 30px;
+
+        div {
+            display: grid;
+            place-items: center;
+            background: #ffffff0e;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            transition: .4s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #909297;
+            }
+
+            &:hover i {
+                color: #1b212c;
+
+            }
+
+            i {
+                transition: .4s;
+                font-size: 36px;
+                color: rgb(179, 179, 179);
+
+            }
+        }
+    }
+}

@@ -1,11 +1,13 @@
 .portfolio {
     width: 80%;
     margin: 0 auto;
-    padding: 7% 0;
-    height: 140vh;
+    padding: 10% 0;
+    height: 160vh;
+    display: flex;
+    justify-content: space-between;
 
     .leftSide {
-        width: 27%;
+        width: 25%;
         height: 100%;
 
         h1 {
@@ -15,7 +17,8 @@
 
         .description {
             padding: 5% 0;
-            font-size: 23px;
+            font-size: 18px;
+            color: #798899;
         }
 
 
@@ -25,28 +28,173 @@
             gap: 30px;
 
             .number1 {
-                background-image: url("../../../assets/images/image_3.jpg.webp");
                 height: 392px;
             }
 
             .number2 {
-                background-image: url("../../../assets/images/image_2.jpg.webp");
-                background-position: center;
                 height: 185px;
             }
 
             .number3 {
-                background-image: url("../../../assets/images/image_3.jpg.webp");
                 height: 165px;
             }
         }
 
         .card {
             width: 100%;
-            border: 1px solid black;
+            position: relative;
+            overflow: hidden;
 
+            &:hover .cardOverlay {
+                opacity: 1;
+            }
+
+            .cardOverlay {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: .4s;
+                background-color: rgba(0, 0, 0, 0.452);
+
+                .icon {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%);
+                    color: white;
+                }
+
+                .text {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    padding: 10px;
+                    color: white;
+
+                    .residence {
+                        margin-bottom: 5px;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            &:hover img {
+                scale: 1.2;
+            }
+
+            img {
+                transition: .4s;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
 
 
+    }
+
+    .rightSide {
+        width: 70%;
+
+        .imagesCont {
+            display: flex;
+            flex-direction: column;
+            gap: 42px;
+            width: 100%;
+
+            .secondRow {
+                display: flex;
+                gap: 40px;
+            }
+
+            .thirdRow {
+                display: flex;
+                gap: 30px;
+            }
+
+            .card {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+
+                &:hover img {
+                    scale: 1.2;
+                }
+
+                &:hover .cardOverlay {
+                    opacity: 1;
+                }
+
+                .cardOverlay {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    transition: .4s;
+                    background-color: rgba(0, 0, 0, 0.452);
+
+                    .icon {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%);
+                        color: white;
+                    }
+
+                    .text {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        padding: 10px;
+                        color: white;
+
+                        .residence {
+                            margin-bottom: 5px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                img {
+                    transition: .4s;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .cardOverlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+
+            .number1 {
+                height: 406px;
+            }
+
+            .number2 {
+                height: 193px;
+            }
+
+            .number3 {
+                height: 193px;
+            }
+
+            .number4 {
+                height: 263px;
+                width: 60%;
+            }
+
+            .number5 {
+                height: 263px;
+                width: 40%;
+            }
+        }
     }
 }
