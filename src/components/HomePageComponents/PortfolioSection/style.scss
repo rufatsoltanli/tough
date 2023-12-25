@@ -2,9 +2,11 @@
     width: 80%;
     margin: 0 auto;
     padding: 10% 0;
-    height: 160vh;
+    min-height: 160vh;
     display: flex;
     justify-content: space-between;
+    // flex-wrap: wrap;
+    gap: 40px;
 
     .leftSide {
         width: 25%;
@@ -23,20 +25,21 @@
 
 
         .imagesCont {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
+            // height: 100%;
+            display: grid;
+            grid-template-rows: 2fr 1fr 1fr;
+            gap: 25px;
 
             .number1 {
-                height: 392px;
+                height: 100%;
             }
 
             .number2 {
-                height: 185px;
+                height: 100%;
             }
 
             .number3 {
-                height: 165px;
+                height: 100%;
             }
         }
 
@@ -98,20 +101,28 @@
 
     .rightSide {
         width: 70%;
+        height: 100%;
 
         .imagesCont {
+            display: grid;
+            grid-template-rows: 2fr 1fr 1fr;
+            height: 100%;
             display: flex;
             flex-direction: column;
-            gap: 42px;
+            gap: 72px;
             width: 100%;
 
             .secondRow {
                 display: flex;
+                // flex-wrap: wrap;
+
                 gap: 40px;
             }
 
             .thirdRow {
                 display: flex;
+                // flex-wrap: wrap;
+
                 gap: 30px;
             }
 
@@ -119,6 +130,7 @@
                 position: relative;
                 width: 100%;
                 overflow: hidden;
+                height: 100%;
 
                 &:hover img {
                     scale: 1.2;
@@ -165,6 +177,7 @@
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+
                 }
 
                 .cardOverlay {
@@ -175,26 +188,41 @@
             }
 
             .number1 {
-                height: 406px;
+                height: 506px;
             }
 
             .number2 {
-                height: 193px;
+                height: 263px;
             }
 
             .number3 {
-                height: 193px;
+                height: 263px;
             }
 
             .number4 {
-                height: 263px;
+                height: 303px;
                 width: 60%;
             }
 
             .number5 {
-                height: 263px;
+                height: 303px;
                 width: 40%;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .portfolio {
+        flex-direction: column;
+        justify-content: center;
+
+        .leftSide {
+            width: 100%;
+        }
+
+        .rightSide {
+            width: 100%;
         }
     }
 }

@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 2fr 3fr;
     // column-gap: 10px;
-    height: 105vh;
+    min-height: 105vh;
 
     .categoriesContainer {
         background-color: #4a5562;
@@ -149,6 +149,18 @@
                     color: black;
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .services {
+        grid-template-columns: 1fr;
+        padding: 20% 0;
+        justify-content: center;
+        align-items: center;
+        .getStarted{
+            margin: 0 auto;
         }
     }
 }

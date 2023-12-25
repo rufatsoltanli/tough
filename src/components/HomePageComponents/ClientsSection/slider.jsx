@@ -12,6 +12,12 @@ function Slide() {
                     snap: true,
                     arrows: false,
                     width: 700,
+                    breakpoints: {
+                        1000: {
+                            width:500,
+                            perPage: 1,
+                        }
+                    }
                 }}>
                 <SplideSlide>
                     <div className="card">

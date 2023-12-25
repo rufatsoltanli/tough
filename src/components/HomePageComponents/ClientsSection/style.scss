@@ -95,3 +95,23 @@
         }
     }
 }
+
+@media only screen and (max-width: 1000px) {
+    .clientsSay {
+        grid-template-columns: 1fr;
+        padding: 20% 0;
+        justify-content: center;
+        align-items: center;
+
+        .leftSide{
+            padding: 5%;
+        }
+        .rightSide {
+            .slide {
+                .card{
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

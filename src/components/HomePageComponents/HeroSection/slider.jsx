@@ -13,6 +13,14 @@ function HeroSlider() {
                 height: 800,
                 focus: 'center',
                 arrows: false,
+                breakpoints: {
+                    1000: {
+                        perPage: 2,
+                    },
+                    700: {
+                        perPage: 1,
+                    },
+                }
             }}>
 
             <SplideSlide>

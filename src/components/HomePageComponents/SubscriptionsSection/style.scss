@@ -1,6 +1,6 @@
 .subscriptionCont {
     background-color: #f8f9fa;
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     place-items: center;
 
@@ -59,8 +59,24 @@
                     }
                 }
             }
-            .freeTrial{
+
+            .freeTrial {
                 color: #53d397;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .subscriptionCont {
+        .cardsCont {
+            grid-template-columns: 1fr;
+            padding: 20% 0;
+            justify-content: center;
+            align-items: center;
+
+            .getStarted {
+                margin: 0 auto;
             }
         }
     }
