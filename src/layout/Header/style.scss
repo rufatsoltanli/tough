@@ -4,24 +4,107 @@ header {
     height: 100%;
     background-color: #1B212C;
     z-index: 3;
+    display: flex;
+
+    .closeButton {
+        position: absolute;
+        right: 60px;
+        top: 50px;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+
+        i {
+            color: white;
+            font-size: 50px;
+            transition: .4s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.2);
+                color: gainsboro;
+            }
+        }
+    }
 
     .leftSide {
         background-image: url("/src/assets/images/bg_2.jpg.webp");
         object-fit: cover;
         background-size: cover;
         background-position: right;
-        width: 30%;
+        width: 35%;
         height: 100%;
     }
 
+    .rightSide {
+        width: 65%;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        padding-left: 10%;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+            .pageLinks {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                text-align: left;
+
+                div {
+                    display: flex;
+                    height: max-content;
+                    width: max-content;
+                    gap: 10px;
+                    font-size: 35px;
+                    color: white;
+
+                    a {
+                        color: white;
+                    }
+
+                    .active {
+                        color: #53d397;
+                    }
+
+                    .numberOfPage {
+                        font-size: 20px;
+                        position: relative;
+                        color: rgba(255, 255, 255, 0.3);
+                        ;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                            ;
+                            width: 100%;
+                            left: 0;
+                            bottom: 0;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     .headerTough {
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translateX(-50%);
+        // position: absolute;
+        // top: 10%;
+        // left: 50%;
+        // transform: translateX(-50%);
+        position: relative;
         color: rgb(250, 250, 250);
-        font-size: 26px;
+        font-size: 30px;
         z-index: 2;
         font-weight: 400;
 
